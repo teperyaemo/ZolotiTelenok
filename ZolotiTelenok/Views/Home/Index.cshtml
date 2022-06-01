@@ -1,0 +1,41 @@
+﻿@model Клиент
+
+@{
+    ViewData["Title"] = "Запись";
+}
+
+<body class="bg-light">
+     <h1 align="center">Запись</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <form asp-action="Index">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Имя" class="control-label"></label>
+                    <input asp-for="Имя" class="form-control" />
+                    <span asp-validation-for="Имя" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Фамилия" class="control-label"></label>
+                    <input asp-for="Фамилия" class="form-control" />
+                    <span asp-validation-for="Фамилия" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Телефон" class="control-label"></label>
+                    <input asp-for="Телефон" class="form-control" />
+                    <span asp-validation-for="Телефон" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Время" class="control-label"></label>
+                    <input asp-for="Время" class="form-control" type="date" />
+                    <span asp-validation-for="Время" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Записатьяс" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>

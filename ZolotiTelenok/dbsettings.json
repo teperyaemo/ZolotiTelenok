@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=DESKTOP-GREB1VK\\SQLEXPRESS;Initial Catalog=ZTDB;Integrated Security=True"
+  }
+}
